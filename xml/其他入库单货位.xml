@@ -1,0 +1,135 @@
+<xml xmlns:s="uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C14882" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:rs="urn:schemas-microsoft-com:rowset" xmlns:z="#RowsetSchema">
+    <s:Schema id="RowsetSchema">
+        <s:ElementType name="row" content="eltOnly" rs:updatable="true">
+            <s:AttributeType name="AutoID" rs:number="1" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="AutoID" rs:keycolumn="true" rs:autoincrement="true" rs:writeunknown="true">
+                <s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true" rs:maybenull="false"/>
+            </s:AttributeType>
+            <s:AttributeType name="RdsID" rs:number="2" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="RdsID">
+                <s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="RdID" rs:number="3" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="RdID">
+                <s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="cWhCode" rs:number="4" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cWhCode">
+                <s:datatype dt:type="string" dt:maxLength="10" rs:maybenull="false"/>
+            </s:AttributeType>
+            <s:AttributeType name="cPosCode" rs:number="5" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cPosCode">
+                <s:datatype dt:type="string" dt:maxLength="20" rs:maybenull="false"/>
+            </s:AttributeType>
+            <s:AttributeType name="cInvCode" rs:number="6" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cInvCode">
+                <s:datatype dt:type="string" dt:maxLength="60"/>
+            </s:AttributeType>
+            <s:AttributeType name="cBatch" rs:number="7" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cBatch">
+                <s:datatype dt:type="string" dt:maxLength="60"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree1" rs:number="8" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree1">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree2" rs:number="9" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree2">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="dVDate" rs:number="10" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="dVDate">
+                <s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="iQuantity" rs:number="11" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="iQuantity">
+                <s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="6" rs:precision="38" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="iNum" rs:number="12" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="iNum">
+                <s:datatype dt:type="number" rs:dbtype="numeric" dt:maxLength="19" rs:scale="6" rs:precision="38" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="cMemo" rs:number="13" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cMemo">
+                <s:datatype dt:type="string" dt:maxLength="255"/>
+            </s:AttributeType>
+            <s:AttributeType name="cHandler" rs:number="14" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cHandler">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="dDate" rs:number="15" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="dDate">
+                <s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="bRdFlag" rs:number="16" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="bRdFlag">
+                <s:datatype dt:type="i2" dt:maxLength="2" rs:precision="5" rs:fixedlength="true" rs:maybenull="false"/>
+            </s:AttributeType>
+            <s:AttributeType name="cSource" rs:number="17" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cSource">
+                <s:datatype dt:type="string" dt:maxLength="10"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree3" rs:number="18" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree3">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree4" rs:number="19" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree4">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree5" rs:number="20" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree5">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree6" rs:number="21" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree6">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree7" rs:number="22" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree7">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree8" rs:number="23" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree8">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree9" rs:number="24" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree9">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cFree10" rs:number="25" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cFree10">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="cAssUnit" rs:number="26" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cAssUnit">
+                <s:datatype dt:type="string" dt:maxLength="35"/>
+            </s:AttributeType>
+            <s:AttributeType name="cBVencode" rs:number="27" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cBVencode">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="iTrackId" rs:number="28" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="iTrackId">
+                <s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="ufts" rs:number="29" rs:rowver="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="ufts" rs:writeunknown="true">
+                <s:datatype dt:type="bin.hex" dt:maxLength="8" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="dMadeDate" rs:number="30" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="dMadeDate">
+                <s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="iMassDate" rs:number="31" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="iMassDate">
+                <s:datatype dt:type="int" dt:maxLength="4" rs:precision="10" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="cMassUnit" rs:number="32" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cMassUnit">
+                <s:datatype dt:type="i2" dt:maxLength="2" rs:precision="5" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="cvmivencode" rs:number="33" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cvmivencode">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="iExpiratDateCalcu" rs:number="34" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="iExpiratDateCalcu">
+                <s:datatype dt:type="i2" dt:maxLength="2" rs:precision="5" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="cExpirationdate" rs:number="35" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cExpirationdate">
+                <s:datatype dt:type="string" rs:dbtype="str" dt:maxLength="10"/>
+            </s:AttributeType>
+            <s:AttributeType name="dExpirationdate" rs:number="36" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="dExpirationdate">
+                <s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="cvouchtype" rs:number="37" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cvouchtype">
+                <s:datatype dt:type="string" dt:maxLength="4"/>
+            </s:AttributeType>
+            <s:AttributeType name="cInVouchType" rs:number="38" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cInVouchType">
+                <s:datatype dt:type="string" dt:maxLength="4"/>
+            </s:AttributeType>
+            <s:AttributeType name="cVerifier" rs:number="39" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="cVerifier">
+                <s:datatype dt:type="string" dt:maxLength="20"/>
+            </s:AttributeType>
+            <s:AttributeType name="dVeriDate" rs:number="40" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="dVeriDate">
+                <s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="dVouchDate" rs:number="41" rs:nullable="true" rs:writeunknown="true" rs:basecatalog="UFDATA_999_2022" rs:basetable="InvPosition" rs:basecolumn="dVouchDate">
+                <s:datatype dt:type="dateTime" rs:dbtype="timestamp" dt:maxLength="16" rs:scale="3" rs:precision="23" rs:fixedlength="true"/>
+            </s:AttributeType>
+            <s:AttributeType name="editprop" rs:number="42" rs:writeunknown="true">
+                <s:datatype dt:type="string" rs:dbtype="str" dt:maxLength="2" rs:maybenull="false"/>
+            </s:AttributeType>
+            <s:extends type="rs:rowbase"/>
+        </s:ElementType>
+    </s:Schema>
+    <rs:data>
+    </rs:data>
+</xml>

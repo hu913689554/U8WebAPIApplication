@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="U8WebAPIApplication.csproj" Id="a4fbb4f2-83a1-4697-a6d0-6afcdc270389">
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>
