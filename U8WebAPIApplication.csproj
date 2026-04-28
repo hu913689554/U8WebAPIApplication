@@ -128,6 +128,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="App_Start\GlobalExceptionFilter.cs" />
     <Compile Include="Controllers\BomController.cs" />
     <Compile Include="Controllers\VoucherController.cs" />
     <Compile Include="Controllers\HelloController.cs" />
@@ -135,13 +136,17 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Util.cs" />
+    <Compile Include="Helpers\JsonToBomConverter.cs" />
+    <Compile Include="Helpers\JsonDotNetFormatter.cs" />
     <Compile Include="Helpers\XmlRsDataConverter.cs" />
+    <Compile Include="PublicClass\Bom_Component .cs" />
+    <Compile Include="PublicClass\Bom_ComponentLoc.cs" />
+    <Compile Include="PublicClass\Bom_ComponentSubs.cs" />
+    <Compile Include="PublicClass\Bom_Parent .cs" />
     <Compile Include="Models\CreateBOM.cs" />
     <Compile Include="Models\Voucher.cs" />
     <Compile Include="Models\U8LoginManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PublicClass\BomDTO.cs" />
-    <Compile Include="PublicClass\BomLineDTO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
